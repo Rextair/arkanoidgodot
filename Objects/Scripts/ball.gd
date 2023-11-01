@@ -15,8 +15,8 @@ func _physics_process(delta):
 	if collision != null:
 		direction = direction.bounce(collision.get_normal())
 		#Player
-		if collision.get_collider() == player_container.player:
-			pass
+#		if collision.get_collider() == player_container.player:
+#			pass
 		#Brick
 		if collision.get_collider().get_meta("brick"):
 			collision.get_collider().HealthDamage()
