@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfj7dkbx6tg5y"]
+
+[ext_resource type="Script" path="res://UI/PlayerUI.gd" id="1_422i8"]
+[ext_resource type="Texture2D" uid="uid://b2r63g1nvkpl7" path="res://Sprites/HUD.png" id="1_krs04"]
+[ext_resource type="Texture2D" uid="uid://cklqvsbie7v7t" path="res://UI/Balls.png" id="2_ktvqy"]
+[ext_resource type="FontFile" uid="uid://ct70i5owv2umd" path="res://Fonts/Kenney Mini.ttf" id="4_wmnxt"]
+[ext_resource type="Texture2D" uid="uid://druemlgfmcyev" path="res://UI/Score.png" id="5_j2yeg"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 428.0
+offset_bottom = 240.0
+script = ExtResource("1_422i8")
+
+[node name="Hud" type="Sprite2D" parent="."]
+texture = ExtResource("1_krs04")
+centered = false
+
+[node name="Balls" type="Sprite2D" parent="."]
+position = Vector2(56, 5)
+texture = ExtResource("2_ktvqy")
+centered = false
+
+[node name="BallLabel" type="Label" parent="Balls"]
+offset_left = 16.0
+offset_top = -2.0
+offset_right = 26.0
+offset_bottom = 13.0
+theme_override_fonts/font = ExtResource("4_wmnxt")
+theme_override_font_sizes/font_size = 8
+text = "00"
+visible_ratio = -0.5
+
+[node name="Score" type="Sprite2D" parent="."]
+position = Vector2(104, 5)
+texture = ExtResource("5_j2yeg")
+centered = false
+
+[node name="ScoreLabel" type="Label" parent="Score"]
+offset_left = 28.0
+offset_top = -2.0
+offset_right = 73.0
+offset_bottom = 21.0
+theme_override_fonts/font = ExtResource("4_wmnxt")
+theme_override_font_sizes/font_size = 8
+text = "000000000"

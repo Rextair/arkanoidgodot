@@ -1,0 +1,21 @@
+[remap]
+
+importer="font_data_image"
+type="FontFile"
+uid="uid://bxlyp48m8kudb"
+path="res://.godot/imported/NumbersUI.png-57fd8cfabd73ec094ca5dc4f83f5049e.fontdata"
+
+[deps]
+
+source_file="res://Fonts/NumbersUI.png"
+dest_files=["res://.godot/imported/NumbersUI.png-57fd8cfabd73ec094ca5dc4f83f5049e.fontdata"]
+
+[params]
+
+character_ranges=PackedStringArray()
+columns=1
+rows=1
+image_margin=Rect2i(0, 0, 0, 0)
+character_margin=Rect2i(0, 0, 0, 0)
+fallbacks=[]
+compress=true

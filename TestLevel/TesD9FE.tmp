@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6fju3cur0dr6"]
+
+[ext_resource type="PackedScene" uid="uid://c2n10pprvwhoh" path="res://Objects/ball.tscn" id="1_smiy0"]
+[ext_resource type="PackedScene" uid="uid://qbwuk5la3878" path="res://Objects/pad.tscn" id="2_4a5k1"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Ball" parent="." instance=ExtResource("1_smiy0")]
+position = Vector2(192, 112)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="Pad" parent="." instance=ExtResource("2_4a5k1")]
+position = Vector2(216, 224)

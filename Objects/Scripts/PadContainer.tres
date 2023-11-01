@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="PlayerContainer" load_steps=2 format=3 uid="uid://cb6ww5kwn6rti"]
+
+[ext_resource type="Script" path="res://Objects/Scripts/PadContainer.gd" id="1_27thi"]
+
+[resource]
+script = ExtResource("1_27thi")

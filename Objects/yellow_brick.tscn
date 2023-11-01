@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://inogsr8pjvxi"]
+
+[ext_resource type="Script" path="res://Objects/Scripts/blue_brick.gd" id="1_5tuoy"]
+[ext_resource type="Texture2D" uid="uid://bjmu7vmp8ht5j" path="res://Sprites/Brick1.png" id="2_ah3fe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c0ogd"]
+size = Vector2(32, 16)
+
+[node name="BlueBrick" type="StaticBody2D"]
+script = ExtResource("1_5tuoy")
+Score = 175
+
+[node name="Brick2" type="Sprite2D" parent="."]
+position = Vector2(16, 8)
+texture = ExtResource("2_ah3fe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(16, 8)
+shape = SubResource("RectangleShape2D_c0ogd")

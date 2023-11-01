@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6fju3cur0dr6"]
+
+[ext_resource type="PackedScene" uid="uid://c2n10pprvwhoh" path="res://Objects/ball.tscn" id="1_smiy0"]
+[ext_resource type="PackedScene" uid="uid://qbwuk5la3878" path="res://Objects/pad.tscn" id="2_4a5k1"]
+[ext_resource type="PackedScene" uid="uid://cfj7dkbx6tg5y" path="res://UI/PlayerUI.tscn" id="3_43dqi"]
+[ext_resource type="PackedScene" uid="uid://p3h566r3dh02" path="res://Objects/blue_brick.tscn" id="4_moqwt"]
+[ext_resource type="PackedScene" uid="uid://inogsr8pjvxi" path="res://Objects/yellow_brick.tscn" id="5_74pbq"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+anchor_mode = 0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" parent="CanvasLayer" instance=ExtResource("3_43dqi")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 0, 432, 0, 432, 240, 424, 240, 424, 16, 0, 16, 0, 240, -8, 240, -8, 0)
+
+[node name="Ball" parent="." groups=["ball"] instance=ExtResource("1_smiy0")]
+position = Vector2(192, 144)
+
+[node name="Pad" parent="." groups=["pad"] instance=ExtResource("2_4a5k1")]
+position = Vector2(216, 224)
+
+[node name="TheLevel" type="Node" parent="."]
+
+[node name="BlueBrick" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(64, 64)
+
+[node name="BlueBrick2" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(96, 64)
+
+[node name="BlueBrick3" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(128, 64)
+
+[node name="BlueBrick4" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(256, 64)
+
+[node name="BlueBrick5" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(288, 64)
+
+[node name="BlueBrick6" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(320, 64)
+
+[node name="BlueBrick7" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(160, 112)
+
+[node name="BlueBrick8" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(192, 112)
+
+[node name="BlueBrick9" parent="TheLevel" instance=ExtResource("4_moqwt")]
+position = Vector2(224, 112)
+
+[node name="BlueBrick10" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(192, 96)
+
+[node name="BlueBrick11" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(192, 80)
+
+[node name="BlueBrick12" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(192, 64)
+
+[node name="BlueBrick13" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(288, 48)
+
+[node name="BlueBrick14" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(288, 32)
+
+[node name="BlueBrick15" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(96, 48)
+
+[node name="BlueBrick16" parent="TheLevel" instance=ExtResource("5_74pbq")]
+position = Vector2(96, 32)
