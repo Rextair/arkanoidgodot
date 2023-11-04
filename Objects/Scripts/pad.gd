@@ -10,6 +10,7 @@ func _ready():
 	set_meta("pad", true)
 	#set
 	player_container.player = self
+	print(player_container.player)
 
 func _physics_process(delta):
 	velocity.y = 0.0
