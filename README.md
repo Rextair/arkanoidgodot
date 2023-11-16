@@ -1,2 +1,2 @@
 # arkanoidgodot
-Attempt to recreate an arkanoid on Godot 4.1.1.stable
+Attempt to recreate an arkanoid on Godot 3.5.stable
